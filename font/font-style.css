@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Tondo Corp";
+    src: url("./Tondo_Corp.eot");
+    src: url("./Tondo_Corp.eot?#iefix") format("embedded-opentype"),
+    url("./Tondo_Corp.woff2") format("woff2"),
+    url("./Tondo_Corp.woff") format("woff"),
+    url("./Tondo_Corp.ttf") format("truetype"),
+    url("./Tondo_Corp.svg") format("svg"); 
+}
