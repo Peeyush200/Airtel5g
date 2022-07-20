@@ -1,396 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airtel 5G</title>
-    <link rel="stylesheet" href="./font/font-style.css" />
-    <link rel="stylesheet" href="./scss/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airtel 5G</title>
+  <link rel="stylesheet" href="./font/font-style.css" />
+  <link rel="stylesheet" href="./scss/style.css" />
 </head>
+
 <body>
     <header>
       <div class="sub_header">
         <div class="container">
+          <div class="header_action_mobile">
+            <button id="select_btn_mobile">try 5G</button>
+            <button class="btn mobile_btn">Experience 5G</button>
+          </div>
           <ul class="menu_list" id="menu_list">
             <li class="active">
-              <a href="javascript:void(0);">try 5G</a>
+              <a href="javascript:void(0);" data="try5G_section">try 5G</a>
             </li>
             <li>
-              <a href="javascript:void(0);">benefits</a>
+              <a href="javascript:void(0);" data="benefits_section">benefits</a>
             </li>
             <li>
-              <a href="javascript:void(0);">5G enabled by airtel</a>
+              <a href="javascript:void(0);" data="5Genabled_section">5G enabled by airtel</a>
             </li>
             <li>
-              <a href="javascript:void(0);">FAQ's</a>
+              <a href="javascript:void(0);" data="faq_section">FAQ’s</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="head_sectoin">
-      <div class="startup_content">
+    <div class="view_content">
+  <section class="head_sectoin">
+    <div class="startup_content">
+      <div class="container">
+        <div class="inside_area">
+          <div class="content">
+            <h4 class="banner_text1">India’s fastest wireless technology</h4>
+            <h4 class="banner_text2"><span>is here</span></h4>
+          </div>
+          <div class="animated_circle">
+            <img src="https://assets.airtel.in/static-assets/airtel-5g/earth-compressed.gif" alt="" />
+          </div>
+        </div>
+        <div class="aritel_5g_log_animation">
+          <div class="airte_logo">
+            <img src="./img/svg/airtel_log.svg" alt="" />
+          </div>
+          <div class="globe_animation">
+            <img src="https://assets.airtel.in/static-assets/airtel-5g/5g_earth.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="benefits_section">
+    <div class="benefits_section_mobile">
+      <div class="mobile_back"><img class="stiky_mobile_device" src="./img/png/Device.png" alt="" /></div>
+      <section class="download_section">
         <div class="container">
-          <div class="inside_area">
-            <div class="content">
-                <h4>India’s fastest wireless technology</h4>
-                <h4><span>is here</span></h4>
-            </div>
-            <div class="animated_circle">
-                <img src="./img/svg/sphere1.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="download_section">
-      <div class="container">
-        <div class="inside_controller">
-          <div class="content_left">
-            <div class="content_area">
-              <div class="icon">
-                <img src="./img/svg/download_icon.svg" alt="" />
-              </div>
-              <h4>10x faster <span>downloads</span></h4>
-              <div class="info_text">download a 1 GB movie within seconds</div>
-              <div class="download_compare">
-              <div class="progress progress_5g">
-                  <span class="spectra_name">5G</span>
-                  <div class="progress_bar">
+          <div class="inside_controller">
+            <div class="content_left">
+              <div class="content_area">
+                <div class="icon">
+                  <img src="./img/svg/download_icon.svg" alt="" />
+                </div>
+                <h4>10x faster <span>downloads</span></h4>
+                <div class="info_text">download a 1 GB movie within seconds</div>
+                <div class="download_compare">
+                  <div class="progress progress_5g">
+                    <span class="spectra_name">5G</span>
+                    <div class="progress_bar">
                       <span class="loader"></span>
+                    </div>
+                    <span class="load_time">10s <sup>1</sup></span>
                   </div>
-                  <span class="load_time">10s <sup>1</sup></span>
-              </div>
-              <div class="progress progress_4g">
-                  <span class="spectra_name">4G</span>
-                  <div class="progress_bar">
+                  <div class="progress progress_4g">
+                    <span class="spectra_name">4G</span>
+                    <div class="progress_bar">
                       <span class="loader"></span>
-                  </div>
-                  <span class="load_time">100s <sup>1</sup></span>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class=""></div>
-          <div class="media_right">
-            <div class="phone_pic">
-                <img class="inside_screen" src="./img/png/Screen1.png" alt="" />
-                <img class="screen_frame" src="./img/png/Device.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="video_section">
-      <div class="container">
-        <div class="inside_controller">
-          <div class="content_left">
-            <div class="content_area">
-              <div class="icon">
-                <img src="./img/svg/video_icon.svg" alt="" />
-              </div>
-              <h4>4k video <span>streaming</span></h4>
-              <div class="info_text">view the best resolution without buffering</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tempor nisi. Nunc sollicitudin augue rhoncus enim ornare lobortis. Vivamus et dui at nunc vestibulum pretium.</p>
-            </div>
-          </div>
-          <div class="media_right">
-            <div class="phone_pic">
-                <img class="inside_screen" src="./img/png/Screen1.png" alt="" />
-                <img class="screen_frame" src="./img/png/Device.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="experience_section">
-      <div class="container">
-        <div class="inside_controller">
-          <div class="content_left">
-            <div class="content_area">
-              <div class="icon">
-                <img src="./img/svg/experience_icon.svg" alt="" />
-              </div>
-              <h4>immersive <span>AR experience</span></h4>
-              <div class="info_text">liven up the world around you</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tempor nisi. Nunc sollicitudin augue rhoncus enim ornare lobortis. Vivamus et dui at nunc vestibulum pretium.</p>
-            </div>
-          </div>
-          <div class="media_right">
-            <div class="phone_pic">
-                <img class="inside_screen" src="./img/png/AR-ski.png" alt="" />
-                <img class="screen_frame" src="./img/png/Device.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="benefit_section">
-        <div class="loding_screen">
-            <div class="container">
-                <div class="lodiing_area">
-                    <div class="lodiing_content">
-                        <div class="title">get all of this...</div>
-                        <ul class="load_items">
-                            <li>
-                                <img src="./img/svg/download_icon.svg" alt="" />
-                            </li>
-                            <li>
-                                <img src="./img/svg/video_icon.svg" alt="" />
-                            </li>
-                            <li>
-                                <img src="./img/svg/experience_icon.svg" alt="" />
-                            </li>
-                        </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="sim_screen">
-            <div class="container">
-                <div class="lodiing_area">
-                    <div class="lodiing_content">
-                        <div class="title">at <span>no extra cost</span>,</div>
-                        <div class="title">without changing your SIM</div>
-                        <div class="sim_exchange">
-                            <img src="./img/svg/Sim.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sim_exchanged_screen">
-            <div class="container">
-                <div class="lodiing_area">
-                    <div class="lodiing_content">
-                        <div class="sim_exchange">
-                            <img src="./img/svg/5g.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="enabled_5g_section">
-        <div class="container">
-            <h3>experience the power of 5G</h3>
-          <div class="row">
-            <div class="left_col">
-              <div class="card card_app">
-                    <div class="graphics">
-                        <img src="./img/svg/app_show.svg" alt="" />
-                    </div>
-                    <div class="card_content">
-                        <h5>on the new airtel Thanks app</h5>
-                        <p>scan QR code to download</p>
-                        <div class="qrcode">
-                            <img src="./img/svg/qrcode.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="right_col">
-                <div class="card card_5gZone">
-                    <div class="graphics">
-                        <img src="./img/png/preview.png" alt="" />
-                    </div>
-                    <div class="card_content">
-                        <h5>in airtel 5G experince zones</h5>
-                        <p>in your city</p>
-                        <div class="action_button">
-                            <a href="javascript:void(0);">find a 5G zone Near You</a>
-                        </div>
-                    </div>
+                    <span class="load_time">100s <sup>1</sup></span>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class=""></div>
+            <div class="media_right">
+              <div class="phone_pic">
+                <img class="inside_screen" src="./img/png/Screen1.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="faq_section">
+      <section class="video_section">
         <div class="container">
-          <div class="inside_faq_area">
-              <h4>have queries?</h4>
+          <div class="inside_controller">
+            <div class="content_left">
+              <div class="content_area">
+                <div class="icon">
+                  <img src="./img/svg/video_icon.svg" alt="" />
+                </div>
+                <h4>4k video <span>streaming</span></h4>
+                <div class="info_text">view the best resolution without buffering</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tempor nisi. Nunc
+                  sollicitudin augue rhoncus enim ornare lobortis. Vivamus et dui at nunc vestibulum pretium.</p>
+              </div>
+            </div>
+            <div class="media_right">
+              <div class="phone_pic">
+                <img class="inside_screen" src="./img/png/Screen1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experience_section">
+        <div class="container">
+          <div class="inside_controller">
+            <div class="content_left">
+              <div class="content_area">
+                <div class="icon">
+                  <img src="./img/svg/experience_icon.svg" alt="" />
+                </div>
+                <h4>immersive <span>AR experience</span></h4>
+                <div class="info_text">liven up the world around you</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tempor nisi. Nunc
+                  sollicitudin augue rhoncus enim ornare lobortis. Vivamus et dui at nunc vestibulum pretium.</p>
+              </div>
+            </div>
+            <div class="media_right">
+              <div class="phone_pic">
+                <img class="inside_screen" src="./img/png/AR-ski.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <section class="benefit_section">
+    <div class="loding_screen animated" data-inviewport="fade-in">
+      <div class="container">
+        <div class="lodiing_area">
+          <div class="lodiing_content">
+            <div class="first_screen">
+              <div class="title animated" data-inviewport="fade-in">get all of this...</div>
+              <ul class="load_items">
+                <li data-inviewport="fade-in" class="animated">
+                  <img src="./img/svg/download_icon.svg" alt="" />
+                </li>
+                <li data-inviewport="fade-in" class="animated">
+                  <img src="./img/svg/video_icon.svg" alt="" />
+                </li>
+                <li data-inviewport="fade-in" class="animated">
+                  <img src="./img/svg/experience_icon.svg" alt="" />
+                </li>
+              </ul>
+
+              <div class="fadewhite animated" data-inviewport="fade-in"></div>
+            </div>
+            <div class="second_screen">
+              <div class="title second animated" data-inviewport="fade-in">at <span>no extra cost</span>,</div>
+              <div class="title third animated" data-inviewport="fade-in">without changing your SIM</div>
+              <div class="sim_exchange animated" data-inviewport="fade-in">
+                <img src="./img/svg/Sim.svg" alt="" />
+                <span class="generation_name four_g animated" data-inviewport="fade-out">4G</span>
+                <span class="generation_name five_g animated" data-inviewport="fade-in">5G</span>
+              </div>
+              <div class="third_screen">
+                <div class="mask animated" data-inviewport="fade-in">
+                  <img src="./img/svg/circuit.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="sim_screen animated" data-inviewport="fade-in">
+            <div class="container">
+                <div class="lodiing_area">
+                    <div class="lodiing_content">
+                        <div class="title animated" data-inviewport="fade-in">at <span>no extra cost</span>,</div>
+                        <div class="title second animated" data-inviewport="fade-in">without changing your SIM</div>
+                        <div class="sim_exchange animated" data-inviewport="fade-in">
+                            <img src="./img/svg/Sim.svg" alt="" />
+                            <span class="generation_name four_g animated" data-inviewport="fade-out">4G</span>
+                            <span class="generation_name five_g animated" data-inviewport="fade-in">5G</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- <div class="sim_exchanged_screen">
+            <div class="container">
+                <div class="lodiing_area">
+                    <div class="lodiing_content">
+                        <div class="sim_exchange">
+                            <img src="./img/svg/circuit.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+  </section>
+  <section class="enabled_5g_section">
+    <div class="container">
+      <h3>experience the power of 5G</h3>
+      <div class="row">
+        <div class="left_col">
+          <div class="card card_app">
+            <div class="graphics">
+              <img src="./img/svg/app_show.svg" alt="" />
+            </div>
+            <div class="card_content">
+              <h5>on the new airtel Thanks app</h5>
+              <p>scan QR code to download</p>
+              <div class="qrcode">
+                <img src="./img/svg/qrcode.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_col">
+          <div class="card card_5gZone">
+            <div class="graphics">
+              <img src="./img/png/preview.png" alt="" />
+            </div>
+            <div class="card_content">
+              <h5>in airtel 5G experince zones</h5>
+              <p>in your city</p>
+              <div class="action_button">
+                <a href="javascript:void(0);">find a 5G zone Near You</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq_section">
+    <div class="container">
+      <div class="inside_faq_area">
+        <h4>have queries?</h4>
+        <div class="details_group">
+          <details class="details" open="true">
+            <summary class="details__summary">
+              does 5G work on all phones?
+            </summary>
+            <div class="details__content">
+              <p>you need a 5G phone to experience it.</p>
+              <div class="button_area">
+                <a class="trigger" href="javascript:void(0);">see 5G phones</a>
+              </div>
+            </div>
+          </details>
+
+          <details class="details">
+            <summary class="details__summary">will the plans include offers to OTT platforms ?</summary>
+            <div class="details__content">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            </div>
+          </details>
+
+          <details class="details">
+            <summary class="details__summary">is my phone eligible for 5G ?</summary>
+            <div class="details__content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem recusandae, amet quisquam aliquid
+                commodi hic ea quibusdam voluptates, exercitationem labore rerum accusantium consequuntur architecto? Ea
+                fugit nisi laborum voluptatibus quisquam laboriosam tenetur. Autem molestias quod, obcaecati deserunt
+                totam quae corporis, optio ipsam, similique adipisci fuga explicabo earum incidunt natus id.</p>
+            </div>
+          </details>
+
+          <details class="details">
+            <summary class="details__summary">will the plans include offers to OTT platforms ?</summary>
+            <div class="details__content">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit voluptate saepe optio quia illo
+                veniam. Distinctio, aliquam neque libero veniam sint ab perferendis? Dolore.</p>
+            </div>
+          </details>
+          <details class="details">
+            <summary class="details__summary">can I get an introduction to a specific member?</summary>
+            <div class="details__content">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit voluptate saepe optio quia illo
+                veniam. Distinctio, aliquam neque libero veniam sint ab perferendis? Dolore.</p>
+            </div>
+          </details>
+          <details class="details">
+            <summary class="details__summary">will the Plans include offers to OTT Platforms ?</summary>
+            <div class="details__content">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit voluptate saepe optio quia illo
+                veniam. Distinctio, aliquam neque libero veniam sint ab perferendis? Dolore.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <ul class="footer_top">
+      <li class="footer_top_item">1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li class="footer_top_item">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    </ul>
+    <ul class="footer_main">
+      <li class="footer_main_item">Footer Element</li>
+      <li class="footer_main_item">Privacy Policy</li>
+      <li class="footer_main_item">Cookie Notice</li>
+      <li class="footer_main_item">DLT Registeration for commercial communication</li>
+      <li class="footer_main_item">Do not disturb list</li>
+      <li class="footer_main_item">Contact Us</li>
+    </ul>
+    <div class="footer_foot">
+      <div class="footer_foot_left">
+        <img class="img" src="./img/svg/bsi.svg" alt="bsi" />
+        <img class="img" src="./img/svg/norton.svg" alt="norton" />
+      </div>
+      <div class="footer_foot_right">2021 airtelindia. all rights reserved</div>
+    </div>
+  </footer>
+  <!-- modal -->
+  <div class="modal">
+    <div class="modal_body">
+      <div class="container">
+        <span class="close_bar"></span>
+        <span class="close_button"></span>
+        <div class="modal_head">
+          <h1>airtel 5G experience zones</h1>
+          <p>select a city to find airtel 5G experience zones</p>
+          <ul class="badge_items">
+            <li class="selected">
+              <a href="javascript:void(0);">Delhi</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Mumbai</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Bangalore</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Chennai</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Hyderabad</a>
+            </li>
+          </ul>
+        </div>
+        <div class="near_option_card">
+          <div class="scroll_content">
+            <div class="inside_wrapper">
+              <div class="card_title">5g zones near you</div>
+              <ul class="zone_list">
+                <li>
+                  <div class="inside_list">
+                    <div class="icon">
+                      <img src="./img/svg/marketplace.svg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Airtel Store Sector 14</h4>
+                      <div class="near_destination">andrew ganj • 1 km</div>
+                      <a href="javascript:void(0);">VIEW ON MAP</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inside_list">
+                    <div class="icon">
+                      <img src="./img/svg/marketplace.svg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Airtel Store Sector 14</h4>
+                      <div class="near_destination">andrew ganj • 1 km</div>
+                      <a href="javascript:void(0);">VIEW ON MAP</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inside_list">
+                    <div class="icon">
+                      <img src="./img/svg/marketplace.svg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Airtel Store Sector 14</h4>
+                      <div class="near_destination">andrew ganj • 1 km</div>
+                      <a href="javascript:void(0);">VIEW ON MAP</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inside_list">
+                    <div class="icon">
+                      <img src="./img/svg/marketplace.svg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Airtel Store Sector 14</h4>
+                      <div class="near_destination">andrew ganj • 1 km</div>
+                      <a href="javascript:void(0);">VIEW ON MAP</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inside_list">
+                    <div class="icon">
+                      <img src="./img/svg/marketplace.svg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Airtel Store Sector 14</h4>
+                      <div class="near_destination">andrew ganj • 1 km</div>
+                      <a href="javascript:void(0);">VIEW ON MAP</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inside_list">
+                    <div class="icon">
+                      <img src="./img/svg/marketplace.svg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Airtel Store Sector 14</h4>
+                      <div class="near_destination">andrew ganj • 1 km</div>
+                      <a href="javascript:void(0);">VIEW ON MAP</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="other_zone_section">
+                <div class="card_title">Other 5G zones in your city</div>
                 <div class="details_group">
                   <details class="details" open="true">
                     <summary class="details__summary">
-                        does 5G work on all phones?
+                      North Delhi
                     </summary>
                     <div class="details__content">
-                        <p>you need a 5G phone to experience it.</p>
-                        <div class="button_area">
-                            <a class="trigger" href="javascript:void(0);">see 5G phones</a>
-                        </div>
+                      <ul class="location_address">
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+  
+                      </ul>
                     </div>
                   </details>
-              
                   <details class="details">
-                    <summary class="details__summary">will the plans include offers to OTT platforms ?</summary>
+                    <summary class="details__summary">
+                      South Delhi
+                    </summary>
                     <div class="details__content">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p> 
+                      <ul class="location_address">
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+  
+                      </ul>
                     </div>
                   </details>
-              
                   <details class="details">
-                    <summary class="details__summary">is my phone eligible for 5G ?</summary>
+                    <summary class="details__summary">
+                      East Delhi
+                    </summary>
                     <div class="details__content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem recusandae, amet quisquam aliquid commodi hic ea quibusdam voluptates, exercitationem labore rerum accusantium consequuntur architecto? Ea fugit nisi laborum voluptatibus quisquam laboriosam tenetur. Autem molestias quod, obcaecati deserunt totam quae corporis, optio ipsam, similique adipisci fuga explicabo earum incidunt natus id.</p>
+                      <ul class="location_address">
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+  
+                      </ul>
                     </div>
                   </details>
-              
                   <details class="details">
-                    <summary class="details__summary">will the plans include offers to OTT platforms ?</summary>
+                    <summary class="details__summary">
+                      West Delhi
+                    </summary>
                     <div class="details__content">
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit voluptate saepe optio quia illo veniam. Distinctio, aliquam neque libero veniam sint ab perferendis? Dolore.</p>
-                    </div>
-                  </details>
-                  <details class="details">
-                    <summary class="details__summary">can I get an introduction to a specific member?</summary>
-                    <div class="details__content">
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit voluptate saepe optio quia illo veniam. Distinctio, aliquam neque libero veniam sint ab perferendis? Dolore.</p>
-                    </div>
-                  </details>
-                  <details class="details">
-                    <summary class="details__summary">will the Plans include offers to OTT Platforms ?</summary>
-                    <div class="details__content">
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A odit voluptate saepe optio quia illo veniam. Distinctio, aliquam neque libero veniam sint ab perferendis? Dolore.</p>
+                      <ul class="location_address">
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <img src="./img/svg/nearby.svg" alt="" />
+                          </div>
+                          <div class="address_text">Lajpat Nagar Block A</div>
+                        </li>
+  
+                      </ul>
                     </div>
                   </details>
                 </div>
+  
+              </div>
             </div>
-        </div>
-      </section>
-      <footer>
-        <ul class="footer_top">
-          <li class="footer_top_item">1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li class="footer_top_item">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ul>
-        <ul class="footer_main">
-          <li class="footer_main_item">Footer Element</li>
-          <li class="footer_main_item">Privacy Policy</li>
-          <li class="footer_main_item">Cookie Notice</li>
-          <li class="footer_main_item">DLT Registeration for commercial communication</li>
-          <li class="footer_main_item">Do not disturb list</li>
-          <li class="footer_main_item">Contact Us</li>
-        </ul>
-        <div class="footer_foot">
-          <div class="footer_foot_left">
-            <img class="img" src="./img/svg/bsi.svg" alt="bsi" />
-            <img class="img" src="./img/svg/norton.svg" alt="norton" />
           </div>
-          <div class="footer_foot_right">2021 airtelindia. all rights reserved</div>
         </div>
-      </footer>
-      <!-- modal -->
-    <div class="modal">
-        <div class="modal_body">
-            <div class="container">
-                <span class="close_button"></span>
-                <div class="modal_head">
-                    <h1>airtel 5G experience zones</h1>
-                    <p>select a city to find airtel 5G experience zones</p>
-                    <ul class="badge_items">
-                        <li>
-                            <a href="javascript:void(0);">Delhi</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Mumbai</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Bangalore</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Chennai</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Hyderabad</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="near_option_card">
-                    <div class="card_title">5g zones near you</div>
-                    <div class="inside_wrapper">
-                        <ul class="zone_list">
-                            <li>
-                                <div class="inside_list">
-                                    <div class="icon">
-                                        <img src="./img/svg/marketplace.svg" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <h4>Airtel Store Sector 14</h4>
-                                        <div class="near_destination">andrew ganj • 1 km</div>
-                                        <a href="javascript:void(0);">VIEW ON MAP</a>
-                                    </div>
-                                </div> 
-                            </li>
-                            <li>
-                                <div class="inside_list">
-                                    <div class="icon">
-                                        <img src="./img/svg/marketplace.svg" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <h4>Airtel Store Sector 14</h4>
-                                        <div class="near_destination">andrew ganj • 1 km</div>
-                                        <a href="javascript:void(0);">VIEW ON MAP</a>
-                                    </div>
-                                </div> 
-                            </li>
-                            <li>
-                                <div class="inside_list">
-                                    <div class="icon">
-                                        <img src="./img/svg/marketplace.svg" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <h4>Airtel Store Sector 14</h4>
-                                        <div class="near_destination">andrew ganj • 1 km</div>
-                                        <a href="javascript:void(0);">VIEW ON MAP</a>
-                                    </div>
-                                </div> 
-                            </li>
-                            <li>
-                                <div class="inside_list">
-                                    <div class="icon">
-                                        <img src="./img/svg/marketplace.svg" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <h4>Airtel Store Sector 14</h4>
-                                        <div class="near_destination">andrew ganj • 1 km</div>
-                                        <a href="javascript:void(0);">VIEW ON MAP</a>
-                                    </div>
-                                </div> 
-                            </li>
-                            <li>
-                                <div class="inside_list">
-                                    <div class="icon">
-                                        <img src="./img/svg/marketplace.svg" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <h4>Airtel Store Sector 14</h4>
-                                        <div class="near_destination">andrew ganj • 1 km</div>
-                                        <a href="javascript:void(0);">VIEW ON MAP</a>
-                                    </div>
-                                </div> 
-                            </li>
-                            <li>
-                                <div class="inside_list">
-                                    <div class="icon">
-                                        <img src="./img/svg/marketplace.svg" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <h4>Airtel Store Sector 14</h4>
-                                        <div class="near_destination">andrew ganj • 1 km</div>
-                                        <a href="javascript:void(0);">VIEW ON MAP</a>
-                                    </div>
-                                </div> 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-      <script src="./js/modal.js"></script>
-      <script src="./js/accordion.js"></script>
-  </body>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/benefits.js"></script>
+  <script src="./js/accordion.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
 </html>

@@ -93,3 +93,147 @@ footer{
     }
   }
 }
+
+// Animations -------------------------------
+
+@keyframes slideIn {
+	0% { opacity:0; transform: translateY(200px); }
+	60% { opacity:1; transform: translateY(0); }
+}
+@keyframes slideOut {
+	0% { opacity:1; transform: translateY(0); }
+  100% { opacity:0; transform: translateY(-200px); }
+}
+@keyframes slideAway {
+	0% {  }
+  100% { opacity:0; transform: translateY(-200px); }
+}
+@keyframes fadeIn {
+	0% { opacity:0; }
+	60% { opacity:1; }
+}
+@keyframes circuitIn {
+  0% { 
+    mask-size: 0%;
+    mask-repeat: no-repeat;   
+  }
+  100% {
+    mask-size: 40%;  
+  }
+}
+
+.animated{
+  animation-duration:0.8s;
+	animation-fill-mode: both;
+}
+.benefit_section{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.loding_screen{
+  [data-inviewport="fade-in"].is-inViewport{
+    animation-name: slideOutFull;
+    animation-delay: 1s;
+  }
+  .title[data-inviewport="fade-in"].is-inViewport { 
+    transition: all 0.2s ease-in;
+    animation-name: slideIn;
+    animation-delay: 1.4s;
+  }
+  .title.second[data-inviewport="fade-in"].is-inViewport { 
+    transition: all 0.2s ease-in;
+    animation-name: slideIn, slideAway;
+    animation-delay: 4s, 6.2s;
+  }
+  .title.third[data-inviewport="fade-in"].is-inViewport { 
+    transition: all 0.2s ease-in;
+    animation-name: slideIn, slideAway;
+    animation-delay: 5s, 6.2s;
+    animation-duration: 1.4s;
+  }
+  li[data-inviewport="fade-in"].is-inViewport{
+    transition: all 0.2s ease-in;
+    animation-name: slideIn;
+  }
+  .fadewhite[data-inviewport="fade-in"].is-inViewport{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    animation-name: fadeIn;
+    animation-delay: 3.5s;
+  }
+  .mask{
+    mask-image: radial-gradient(circle, black 100%, rgba(0, 0, 0, 0) 100%);
+    mask-position: center;
+  }
+  .mask[data-inviewport="fade-in"].is-inViewport{
+    transition: all 1s ease-in;
+    animation-name: circuitIn;
+    animation-delay: 6.3s;
+    animation-duration: 4s;
+  }
+
+  @for $i from 1 through 3{
+    li[data-inviewport="fade-in"].is-inViewport{
+      &:nth-child(#{$i}){
+        animation-delay:#{$i/3}s;
+      }
+    }
+  }
+
+  .sim_exchange[data-inviewport="fade-in"].is-inViewport { 
+    transition: all 0.2s ease-in;
+    animation-name: fadeIn;
+    animation-delay: 5.7s;
+    animation-duration: 1.4s;
+  }
+  .sim_exchange{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 70px;
+    position: relative;
+    .generation_name{
+      position: absolute;
+      right: 0;
+      color: #fff;
+      font-size: 52px;
+      line-height: 28px;
+      padding: 50px 25px;
+      &.four_g{
+        &[data-inviewport="fade-out"].is-inViewport{
+          transition: all 0.2s ease-in;
+          animation-name: slideOut;
+          animation-delay: 6.2s;
+          animation-duration: 1.4s;
+          animation-fill-mode: forwards;
+        }
+      }
+      &.five_g{
+        &[data-inviewport="fade-in"].is-inViewport{
+          transition: all 0.2s ease-in;
+          animation-name: slideIn;
+          animation-delay: 6.2s;
+          animation-duration: 1.4s;
+        }
+      }
+    }
+  }
+}
+.first_screen, .second_screen, .third_screen{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.third_screen{
+  justify-content: flex-end;
+}

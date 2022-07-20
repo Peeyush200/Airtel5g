@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airtel 5G</title>
+    <link rel="stylesheet" href="./font/font-style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./scss/scroll.css" />
+    <link rel="stylesheet" href="./scss/5g-phone.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="sub_header">
+        <div class="container">
+          <button id="select_btn_mobile">try 5G</button>
+          <ul class="menu_list" id="menu_list">
+            <li class="active">
+              <a href="javascript:void(0);" data="try5G_section">try 5G</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data="benefits_section">benefits</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data="5Genabled_section"
+                >5G enabled by airtel</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0);" data="faq_section">FAQ’s</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="view_content">
+      <section class="five_g_phone">
+        <div class="five_g_phone_head">
+          <div class="container">
+            <h1 class="heading">5G phones</h1>
+            <div class="subheading">
+              explore 5G compatible phones and enjoy amazing benefits
+            </div>
+            <div class="select">
+              <button id="custom_select">all brands <img src="./img/svg/down_arrow_white.svg" width="14"/></button>
+              <ul class="custom_dropdown">
+                <li>all brands</li>
+                <li>Samsung</li>
+                <li>Vivo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="five_g_phone_body">
+          <div class="container">
+            <div class="phones_items_container">
+              <ul>
+                <li class="phones_items">
+                  <img src="./img/png/phone.png" />
+                  <div class="items_details">
+                    <h2 class="brand_name">One plus nord CE2 lite 5G</h2>
+                    <p class="config_detail">6GB RAM, 128GB Storage</p>
+                    <div class="action_icon">
+                      <a><img src="./img/svg/facebook_icon.svg" width="13"/></a>
+                      <a><img src="./img/svg/amazone_icon.svg" width="13"/></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="phones_items">
+                  <img src="./img/png/phone_both.png" />
+                  <div class="items_details">
+                    <h2 class="brand_name">Samsung Galaxy S20 FE 5G</h2>
+                    <p class="config_detail">8GB RAM, 128GB Storage</p>
+                    <div class="action_icon">
+                      <a><img src="./img/svg/facebook_icon.svg" width="13"/></a>
+                      <a><img src="./img/svg/amazone_icon.svg" width="13"/></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="phones_items">
+                  <img src="./img/png/phone.png" />
+                  <div class="items_details">
+                    <h2 class="brand_name">One plus nord CE2 lite 5G</h2>
+                    <p class="config_detail">6GB RAM, 128GB Storage</p>
+                    <div class="action_icon">
+                      <a><img src="./img/svg/facebook_icon.svg" width="13"/></a>
+                      <a><img src="./img/svg/amazone_icon.svg" width="13"/></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="phones_items">
+                  <img src="./img/png/phone_both.png" />
+                  <div class="items_details">
+                    <h2 class="brand_name">Samsung Galaxy S20 FE 5G</h2>
+                    <p class="config_detail">8GB RAM, 128GB Storage</p>
+                    <div class="action_icon">
+                      <a><img src="./img/svg/facebook_icon.svg" width="13"/></a>
+                      <a><img src="./img/svg/amazone_icon.svg" width="13"/></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="five_g_phone_foot">
+        <div class="container">
+          <div class=""></div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var customSelect = document.getElementById("custom_select");
+      var selectMain = document.querySelector(".select");
+
+      function customSelectFunction(event) {
+        if (selectMain) {
+          selectMain.classList.toggle("active");
+        }
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('#custom_select')) {
+          if (selectMain.classList.contains('active')) {
+            selectMain.classList.remove('active');
+          }
+        }
+      }
+
+      customSelect.addEventListener("click", customSelectFunction);
+    </script>
+  </body>
+</html>

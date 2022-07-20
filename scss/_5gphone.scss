@@ -1,0 +1,117 @@
+.five_g_phone{
+    .five_g_phone_head{
+        padding: 60px 0;
+        text-align: center;
+        .heading{
+            font-size: 48px;
+            list-style: 1.2;
+            margin: 0;
+        }
+        .subheading{
+            padding: 20px 0;
+        }
+    }
+    .five_g_phone_body{
+        padding: 20px 0;
+    }
+}
+
+/* body content*/
+.phones_items_container{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .phones_items{
+        width: 50%;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .items_details{
+            width: 70%;
+            text-align: center;
+        }
+    }
+    .brand_name{
+        color: #292C31;
+        font-size: 18px;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .config_detail{
+        padding: 5px 0;
+        margin: 0;
+        color: #87888A;
+        font-size: 14px;
+    }
+    .action_icon{
+        a{
+            width: 32px;
+            background: #FFFFFF;
+            border: 1px solid #A0A2A4;
+            border-radius: 16px;
+            height: 32px;
+            display: inline-flex;
+            cursor: pointer;
+            margin: 4px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .phones_items_container .phones_items{
+        width: 25%;
+    }
+}
+
+/* Select */
+.select{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    button{
+        background-color:transparent;
+        border: 1px solid #3E4146;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 9px;
+        img{
+            filter: invert(1);
+        }
+    }
+    .custom_dropdown{
+        position: absolute;
+        box-shadow: 0 0 10px #dedede;
+        border-radius: 7px;
+        z-index: 1;
+        background: #fff;
+        min-width: 200px;
+        border: 1px #e2e2e2 solid;
+        padding:10px 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        li{
+            padding: 6px 15px;
+            cursor: pointer;
+            &:hover{
+                background-color: #000000;
+                color: #fff;
+            }
+        }
+    }
+    &.active{
+        button{
+            img{
+                transform: rotate(180deg);
+            }
+        }
+        .custom_dropdown{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.banner_text1{
+  animation: 1s bannerTextMovesIn forwards ease-out, 1s bannerTextMovesOut forwards ease-out;
+  animation-delay: 0s, 3.7s;
+}
+.banner_text2{
+  animation: 1s bannerTextMovesIn forwards ease-out, 1s bannerTextMovesOut forwards ease-out;
+  opacity: 0;
+  animation-delay: 0.7s, 3.7s;
+}
+.animated_circle{
+  animation: 5s bannerGlobAnimation forwards ease-in-out;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.aritel_5g_log_animation{
+  opacity: 0;
+  animation: 2s aritel_5g_log_animation forwards ease-in-out;
+  animation-delay: 4s;
+}
+.progress {
+  &_5g {
+    .loader[data-inviewport="slide-in"].is-inViewport {
+      animation: 2s progress forwards ease-in-out;
+    }
+  }
+  &_4g {
+    .loader[data-inviewport="slide-in"].is-inViewport {
+      animation: 5s progress forwards ease-in-out;
+    }
+  }
+}
+
+@keyframes progress{
+  from{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@keyframes bannerTextMovesIn{
+  0%{
+    transform:translateY(80px);
+    opacity: 0;
+  }
+  100%{
+    transform:translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes bannerTextMovesOut{
+  0%{
+    transform:translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform:translateY(-80px);
+    opacity: 0;
+  }
+}
+@keyframes bannerGlobAnimation{
+  0%{ 
+    transform:translateY(0);
+    opacity: 0;
+  }
+  40%{
+    transform:translateY(0vh);
+    opacity: 1;
+  }
+  100%{
+    transform:translateY(-60vh);
+    opacity: 0;
+  }
+}
+@keyframes aritel_5g_log_animation{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
